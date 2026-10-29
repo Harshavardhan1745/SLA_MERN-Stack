@@ -1,0 +1,7 @@
+What are the different between the react , javascript and express ..?
+
+JavaScript is a programming language. It is mainly used to add logic, functionality, and interactivity to web applications. With JavaScript, we can work with variables, functions, arrays, objects, loops, events, DOM manipulation, API calls, and many other programming concepts. JavaScript can run in the browser, and with Node.js it can also run on the server.
+
+React is a JavaScript library developed by Meta. It is mainly used to build the frontend or user interface of web applications. React allows us to divide the UI into reusable components such as Navbar, Home, Login, ProductCard, and Footer. It also provides features such as props, state, hooks, and component-based development. React helps us build dynamic and interactive user interfaces efficiently.
+
+Express.js is a backend web framework for Node.js. It is mainly used to create servers and APIs. Using Express, we can handle HTTP requests such as GET, POST, PUT, and DELETE. It can be used for login and registration APIs, CRUD operations, authentication, and communication with databases.

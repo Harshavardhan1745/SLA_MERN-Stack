@@ -1,0 +1,14 @@
+
+const About = () => {
+  return (
+    <>
+    <div className="bg-gradient-to-r from-red-500 to-white/10 p-10 flex items-center justify-center">
+        <div>
+            <h1>About</h1>
+        </div>
+    </div>
+    </>
+  )
+}
+
+export default About

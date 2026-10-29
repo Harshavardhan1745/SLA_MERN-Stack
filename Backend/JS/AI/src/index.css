@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@keyframes grow {
+  from {
+    width: 0;
+  }
+}
