@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="p-3">
+    <div class="flex flex-col gap-5">
+        <div><input type="text" id="name" placeholder=".." class="border border-black p-1 rounded"></div>
+        <div><button onclick="changecontent()" class="bg-black text-white p-2 w-50 rounded">show name</button></div>
+        <h2 id="heroname"></h2>
+    </div>
+
+    <div class="flex flex-col gap-5">
+        <div>
+            <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias expedita consequatur
+                ipsa? Facilis atque eos dolorum repudiandae illum, delectus error laudantium, doloremque iste deleniti
+                odio autem modi ad nobis aspernatur?</p>
+        </div>
+        <div>
+            <button onclick="hidepara()" class="bg-black text-white p-2 w-25 rounded">hide</button>
+        </div>
+    </div>
+
+
+    <div class="flex flex-col gap-5">
+        <div>
+            <p id="paras" style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+                expedita consequatur
+                ipsa? Facilis atque eos dolorum repudiandae illum, delectus error laudantium, doloremque iste deleniti
+                odio autem modi ad nobis aspernatur?</p>
+        </div>
+        <div>
+            <button onclick="hideparas()" class="bg-black text-white p-2 w-25 rounded">hide</button>
+        </div>
+    </div>
+
+
+    <div class="flex flex-col gap-5">
+        <div id="inhide" style="display: flex;" class="bg-blue-500 text-white p-2 m-5 rounded">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum temporibus voluptatibus nobis tempora,
+                omnis commodi
+                exercitationem quia possimus accusamus, id incidunt in ea rerum sed quod, ipsam sunt unde molestias.</p>
+        </div>
+        <div>
+            <button onclick="hid()" class="bg-black text-white p-2 w-25 rounded">hide the para</button>
+        </div>
+    </div>
+
+    <div class="flex flex-col gap-5">
+        <div>
+            <div><input type="text" id="names" placeholder=".." class="border border-black p-1 rounded mt-4"></div> 
+        </div>
+        <div>
+            <button onclick="loginDone()" class="bg-blue-500 text-white rounded p-2 w-60">login</button>
+        </div>
+    </div>
+
+    <div class="flex flex-col gap-5">
+        <div>
+            <div><input type="password" id="password" placeholder=".." class="border border-black p-1 rounded mt-4"></div> 
+        </div>
+        <div>
+            <button onclick="passDone()" class="bg-blue-500 text-white rounded p-2 w-60">confirm</button>
+        </div>
+        <h2 id="result"></h2>
+    </div>
+
+    <div class="flex flex-col gap-5">
+        <div>
+            <input type="text" placeholder="first name " id="first" class="border border-black p-1 rounded"><br><br>
+            <input type="text" placeholder="last name" id="last" class="border border-black p-1 rounded">
+        </div>
+        <div>
+            <button onclick="addName()" class="bg-blue-500 text-white rounded p-2 w-60">show</button>
+        </div>
+        <h2 id="res"></h2>
+    </div>
+
+    <script>
+
+        function changecontent() {
+            let hero = document.getElementById("name").value
+            document.getElementById("heroname").innerHTML = hero
+        }
+
+        function hidepara() {
+            const hideparagh = document.getElementById("para").style.display = "none"
+        }
+
+        function hideparas() {
+            document.getElementById("paras").style.display = "block"
+        }
+
+        function hid() {
+            const change = document.getElementById("inhide")
+
+            if (change.style.display === "none") {
+                change.style.display = "flex"
+            } else {
+                change.style.display = "none"
+            }
+        }
+
+        function loginDone(){
+            const names = document.getElementById("names").value 
+
+            if(names === "admin"){
+                alert('Login Success')
+            }else{
+                alert('Invalid User')
+            }
+        }
+
+        function passDone(){
+            const pass = document.getElementById("password").value
+            const result = document.getElementById("result")
+
+            if(pass.length >= 8 ){
+                result.innerHTML = "strong pass"
+            }else{
+                result.innerHTML = "week passs"
+            }
+        }
+
+
+        function addName(){
+            const first = document.getElementById("first").value
+            const last  = document.getElementById("last").value
+            document.getElementById("res").innerHTML = `${first} ${last}`
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box; 
+}
+.box{
+    background-color: black;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    margin: auto;
+}
+.box-one{
+    background-color: bisque;
+    color:brown;
+    height: 150px;
+    width: 150px;
+    padding-top: 10px;
+    margin: auto;
+}
+.child{
+    margin: 30px;
+}

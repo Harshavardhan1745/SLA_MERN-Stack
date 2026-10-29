@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+
+    <div class="bg-blue-500 text-white p-6 rounded ">
+        <div class="bg-black rounded w-fit p-3">
+            <table>
+            <thead>
+                <th>s.no</th>
+                <th>Name</th>
+                <th>Brand</th>
+                <th>Category</th>
+            </thead>
+            <tbody id="userData">
+
+            </tbody>
+        </table>
+        </div>
+    </div>
+
+    <script>
+        const datas =  async()=> {
+            const res = await fetch("https://dummyjson.com/products")
+            console.log(res);
+            
+            const changeData = await res.json()
+            // JSON.parse()
+            // console.log(changeData.products);
+
+            const result = changeData.products
+
+
+            const user = document.getElementById("userData")
+            
+            result.forEach((e,i)=>{
+                user.innerHTML += `
+                 
+                <tr>
+                  <td>${i+1}</td>
+                  <td>${e.title}</td> 
+                  <td>${e.brand}</td> 
+                  <td>${e.category}</td>   
+                </tr>
+                `
+            })
+        }
+
+
+        datas()
+        
+    </script>
+</body>
+
+</html>

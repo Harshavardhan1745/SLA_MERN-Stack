@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Track</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="../assets/favicon_io (1)/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../userPanel/loginPage.css">
+</head>
+
+<body>
+    <main>
+        <div class="flex justify-center items-center h-screen">
+            <div class="bg-white p-10 w-fit rounded flex flex-col gap-5 shadow-2xl">
+                <div class="flex flex-col justify-center items-center gap-2">
+                    <img src="../assets/Logo_cpm.png" alt="logo" width="80" height="80">
+                    <h1 class="text-2xl">Login</h1>
+                    <p class="text-sm text-gray-500">Welcome ! Please enter your details. </p>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <label class="text-sm">Email</label>
+                    <input type="email" placeholder="Enter your email" id="email"
+                        class=" w-80 border border-gray-300 p-2 rounded-md outline-none focus:outline-none focus:ring-0 focus:border-gray-300">
+                    <label class="text-sm">Password</label>
+                    <input type="password" placeholder="Enter your password" id="password"
+                        class=" w-80 border border-gray-300 p-2 rounded-md outline-none focus:outline-none focus:ring-0 focus:border-gray-300">
+                </div>
+                <div class="flex  justify-between items-center ">
+                    <label class="text-sm flex gap-2 items-center">
+                        <input type="checkbox" id="remember">Remember me
+                    </label>
+                    <a href="#" class="text-sm text-blue-500">Forgot password? </a>
+                </div>
+                <div>
+                    <button id="loginBtn" class="p-2 bg-blue-500 text-white rounded w-80">Sign in </button>
+                </div>
+                <hr >
+                <button
+                    class="flex justify-center items-center gap-5 border border-gray-300 p-2 rounded-md outline-none focus:outline-none focus:ring-0 focus:border-gray-300"><img
+                        src="../assets/google_logo.png" alt="loading" class="w-8 h-8">Sign in with Google</button>
+            </div>
+        </div>
+    </main>
+    <script>
+        const email = document.getElementById("email");
+        const password = document.getElementById("password");
+        const remember = document.getElementById("remember");
+        const loginBtn = document.getElementById("loginBtn");
+
+        window.onload = function () {
+
+            if (localStorage.getItem("remember") === "true") {
+
+                email.value = localStorage.getItem("email");
+                password.value = localStorage.getItem("password");
+                remember.checked = true;
+
+            }
+
+        };
+        loginBtn.addEventListener("click", function () {
+
+            if (remember.checked) {
+
+                localStorage.setItem("email", email.value);
+                localStorage.setItem("password", password.value);
+                localStorage.setItem("remember", true);
+
+                // alert("Login details saved!");
+
+            } else {
+
+                localStorage.removeItem("email");
+                localStorage.removeItem("password");
+                localStorage.removeItem("remember");
+
+            }
+
+        });
+    </script>
+</body>
+
+</html>

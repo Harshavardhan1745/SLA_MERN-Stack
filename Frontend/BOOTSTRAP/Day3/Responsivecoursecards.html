@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Responsive Course Cards</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head> 
+<body class="bg-gray-200">
+    <main>
+        <h1 class="text-4xl font-bold text-center p-5">Course Lists</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-6 p-3">
+            <div class="bg-white  rounded-md shadow-lg overflow-hidden">
+               <img src="../assets/fullstack.png" class="w-full h-48 object-cover" alt="loading">
+               <div class="p-3 g">
+                  <h3 class="text-xl font-bold">Fullstack</h3>
+                  <p class="text-gray-500">Trainer : Bala Muguthan</p>
+                  <p>Rs : 45000</p>
+                  <button class="btn bg-blue-500 w-full mt-3 text-white p-2 rounded-md hover:bg-blue-700">Enroll</button>
+              </div>
+           </div>
+            <div class="bg-white  rounded-md shadow-lg overflow-hidden">
+               <img src="../assets/networking.png" class="w-full h-48 object-cover" alt="loading">
+               <div class="p-3 g">
+                  <h3 class="text-xl font-bold">Networking</h3>
+                  <p class="text-gray-500">Trainer : Sara</p>
+                  <p>Rs : 35000</p>
+                  <button class="btn bg-blue-500 w-full mt-3 text-white p-2 rounded-md hover:bg-blue-700">Enroll</button>
+              </div>
+           </div>
+           <div class="bg-white  rounded-md shadow-lg overflow-hidden">
+               <img src="../assets/ui ux design.png" class="w-full h-48 object-cover" alt="loading">
+               <div class="p-3 g">
+                  <h3 class="text-xl font-bold">UI & UX Design</h3>
+                  <p class="text-gray-500">Trainer : Sathish</p>
+                  <p>Rs : 40000</p>
+                  <button class="btn bg-blue-500 w-full mt-3 text-white p-2 rounded-md hover:bg-blue-700">Enroll</button>
+              </div>
+           </div>
+            <div class="bg-white  rounded-md shadow-lg overflow-hidden">
+               <img src="../assets/data analyst.png" class="w-full h-48 object-cover" alt="loading">
+               <div class="p-3 g">
+                  <h3 class="text-xl font-bold">Data Analyst</h3>
+                  <p class="text-gray-500">Trainer : Harish</p>
+                  <p>Rs : 30000</p>
+                  <button class="btn bg-blue-500 w-full mt-3 text-white p-2 rounded-md hover:bg-blue-700">Enroll</button>
+              </div>
+           </div>
+           <div class="bg-white  rounded-md shadow-lg overflow-hidden">
+               <img src="../assets/prompt engineering.png" class="w-full h-48 object-cover" alt="loading">
+               <div class="p-3 g">
+                  <h3 class="text-xl font-bold">Prompt Engineering</h3>
+                  <p class="text-gray-500">Trainer : Lokesh</p>
+                  <p>Rs : 35000</p>
+                  <button class="btn bg-blue-500 w-full mt-3 text-white p-2 rounded-md hover:bg-blue-700">Enroll</button>
+              </div>
+           </div>
+           <div class="bg-white  rounded-md shadow-lg overflow-hidden">
+               <img src="../assets/sottware testing.png" class="w-full h-48 object-cover" alt="loading">
+               <div class="p-3 g">
+                  <h3 class="text-xl font-bold">Software Testing</h3>
+                  <p class="text-gray-500">Trainer : Pooja</p>
+                  <p>Rs : 30000</p>
+                  <button class="btn bg-blue-500 w-full mt-3 text-white p-2 rounded-md hover:bg-blue-700">Enroll</button>
+              </div>
+           </div>
+        </div>
+    </main>
+    <section class="p-6">
+        <h1 class="text-4xl font-bold text-center p-5">Admin Dashboard</h1>
+        <div class="flex flex-col md:flex-row bg-white shadow-lg rounded-xl">
+            <aside class="w-full md:w-48 bg-gray-900 text-white rounded-xl p-6">
+                <h2 class="text-2xl mb-6 font-bold">Admin</h2>
+                <ul class="space-y-4">
+                    <li>Dashboard</li>
+                    <li>Users</li>
+                    <li>Courses</li>
+                    <li>Reports</li>
+                    <li>Settings</li>
+                </ul>
+            </aside>
+            <main class="flex-1 p-6">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-6">
+                    <div class="bg-blue-300 p-5 rounded-md shadow-lg">
+                        <p class="text-gray-600 text-xl">User</p>
+                        <h1 class="font-bold text-3xl">120</h1>
+                    </div>
+                    <div class="bg-green-300 p-5 rounded-md shadow-lg">
+                        <p class="text-gray-600 text-xl">Course</p>
+                        <h1 class="font-bold text-3xl">15</h1>
+                    </div>
+                    <div class="bg-yellow-300 p-5 rounded-md shadow-lg">
+                        <p class="text-gray-600 text-xl">Sales</p>
+                        <h1 class="font-bold text-3xl">Rs:50K</h1>
+                    </div>
+                    <div class="bg-pink-300 p-5 rounded-md shadow-lg">
+                        <p class="text-gray-600 text-xl">Reports</p>
+                        <h1 class="font-bold text-3xl">8</h1>
+                    </div>
+                    <div class="flex flex-col">
+                        <h2 class="text-2xl font-bold mb-4">Recent User</h2>
+                    <div>
+                        <table class="w-full border border-gray-300">
+                            <tr class="bg-gray-200">
+                                <th class="p-3 border">Name</th>
+                                <th class="p-3 border">Email</th>
+                                <th class="p-3 border">Course</th>
+                            </tr>
+                            <tr>
+                                <td class="p-3 border">Harsha</td>
+                                <td class="p-3 border">iamharsha@gmail.com</td>
+                                <td class="p-3 border">Fullstack</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 border">Harsha</td>
+                                <td class="p-3 border">iamharsha@gmail.com</td>
+                                <td class="p-3 border">Fullstack</td>
+                            </tr>
+                        </table>
+                     </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </section>
+    <section class="p-6">
+        <div class="bg-white p-5 rounded-md shadow-lg">
+            <div class="flex justify-between">
+               <h1 class="font-bold text-2xl text-blue-500">SLA</h1> 
+               <div class="flex gap-8">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Service</a>
+                <a href="#">Contact</a>
+               </div>   
+               <div>
+                <button class="bg-blue-500 text-white p-2 rounded-md w-20 hover:-translate-x-2">login</button>
+               </div>
+            </div>
+            <div class="bg-blue-50 w-full rounded-md mt-2 ">
+                <div class="flex flex-col justify-center items-center gap-8 p-10 ">
+                    <h1 class="text-4xl font-bold">Build Your Digital Future</h1>
+                    <p class="text-gray-500">We create modern website,apps and digital solutions for your business</p>
+                    <button class="bg-blue-500 text-white p-2 rounded-md w-40 hover:bg-blue-700">Get started</button>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white p-5 rounded-md shadow-lg mt-10" >
+            <div class="flex gap-10">
+                <img src="../assets/SLA.png" alt="loading">
+                <div class="flex flex-col gap-3">
+                    <h1 class="font-bold text-3xl">About us </h1>
+                    <p class="text-gray-500">SLA Institute, based in KK Nagar, Chennai, is a premier IT training and placement organization established in 2005. It specializes in job-driven technical education, bridging the gap between academia and the IT industry by offering practical, real-time project experience and lifetime job placement</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div>
+            <h1 class="text-4xl font-bold text-center p-5">Our Service</h1>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5 p-5">
+                <div class="bg-white p-6 rounded-md shadow-lg text-center">
+                    <h1 class="font-bold">Web Design</h1>
+                    <p class="text-gray-500">Modern resposive website design</p>
+                </div>
+                <div class="bg-white p-6 rounded-md shadow-lg text-center">
+                    <h1 class="font-bold">UI/UX Design</h1>
+                    <p class="text-gray-500">Clean and user friendly interface</p>
+                </div>
+                <div class="bg-white p-6 rounded-md shadow-lg text-center">
+                    <h1 class="font-bold">Development</h1>
+                    <p class="text-gray-500">Frontend and backend development</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="p-5">
+            <div class="flex flex-col justify-center items-center bg-blue-50 p-5 rounded-md shadow-lg">
+                <h1 class="font-bold text-3xl">Contact us</h1>
+                <form class="mt-5 flex flex-col gap-5"> 
+                    <input type="text" placeholder="Your name" class="border shadow-lg w-80 p-2 rounded-md">
+                    <input type="text" placeholder="Your email" class="border shadow-lg w-80 p-2 rounded-md">
+                    <textarea placeholder="Message" class="border shadow-lg w-80 p-2 rounded-md"></textarea>
+                    <button class="bg-blue-500 text-white p-2  rounded-md hover:bg-blue-700 ">Send Message</button>
+                </form>
+            </div>
+            <footer class="bg-gray-900 text-center text-white p-6 mt-8">
+                <p>© 2026 SLA.  All Rights Reserved.</p>
+                <p class="mt-2">Facebook | Instagram | LinkedIn</p>
+            </footer>
+    </section>
+</body>
+</html>

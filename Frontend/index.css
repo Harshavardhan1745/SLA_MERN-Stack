@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(211, 211, 211, 0.76);
+}
+.profile{
+    text-align: center;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.profile img{
+    width: 75px;
+    height: 75px;
+}
+.sidebar{
+    width: 260px;
+    background: #111827;
+    color: white;
+    padding: 25px;
+    position: fixed;
+    height: 100vh;
+}
+.menu li{
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.menu li:hover{
+    background-color: #2563eb;
+}
+.main-content{
+    margin-left: 260px;
+    padding: 30px;
+    
+}
+.welcomecard{
+    width: 100%;
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: white;
+    padding: 30px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.welcomecard-btn{
+    background-color: white;
+    color: #7c3aed;
+    padding: 8px;
+    border-radius: 8px;
+    width: 160px;
+}
+.aboutcard{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}

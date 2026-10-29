@@ -1,0 +1,98 @@
+<script>
+    let namee = "Harsha"
+    console.log(namee);
+    namee = "Harshavardhan"
+    console.log(namee);
+
+   const names = "MERN STACK"
+   console.log(names);
+//    names = "FULL STACK"
+//    console.log(names);
+   
+
+   function greet() {
+    console.log("Welcome to javascript");
+   }
+   greet()
+
+   const showHero = (heroName)=>{
+    console.log(`Hero name :  heroNam`);
+    
+   }
+   showHero("Vijai")
+
+   const number = (a,b)=>{
+    console.log(a+b);
+    
+   }
+   number(10,20)
+
+   let hero = "VIJAI"
+   console.log(`My Favourite Hero is ${hero}`);
+   console.log(`
+   name
+
+   course
+
+   city`);
+   
+   const arr = ["Vijay","Ajith","Suriya"]
+   let  [ hero1,hero2,hero3 ] =arr
+   console.log(hero1);
+   console.log(hero2);
+   console.log(hero3);
+   
+   const obj = {
+       name:"Sudhan",
+       course:"MERN",
+       city:"Chennai"
+   }
+   const {name ,course, city }= obj
+   console.log(`
+   name   : ${name}
+   course : ${course}`);
+   
+
+   let arry = ["HTML","CSS","JavaScript"]
+   let arr1 = ["React"]
+
+   console.log(...arry,...arr1);
+   
+
+   let arr2 = ["Vijay","Ajith"]
+   let arr3 = ["Suriya","SK"]
+   console.log(...arr2,...arr3);
+   
+
+   let object1 = {
+    name:"Sudhan",
+    city:"Chennai"
+   }
+   let object2 = {
+    ...object1,
+    course:"MERN"
+   }
+   console.log(object2);
+
+
+   const data = (...number)=>{
+    console.log(number);
+    for (myvalue of number){
+        console.log(myvalue);
+        
+    }
+
+   }
+   data(10,20,30,40)
+
+
+   function sum(...numbers){
+    let total = 0
+    for(let i = 0;i<numbers.length;i++){
+        total += numbers[i]
+    }
+    console.log(total);
+    
+   }
+   sum(10,20,30,40,50)
+</script>

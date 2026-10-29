@@ -1,0 +1,52 @@
+<script>
+    const arr = ["Vijay","Ajith","Suriya"]
+    let data = arr.map(arr=>arr.toUpperCase())
+    console.log(data);
+
+
+    const number = [100,200,300,400,500]
+    let num = number.map(number=>number*10)
+    console.log(num);
+    
+    const movie =["GOAT","LEO","MASTER"]
+    let addMovie = movie.map(movie=>`Movie : ${movie}`)
+    console.log(addMovie);
+
+    const collect = [100,500,800,200,900]
+    const fit = collect.filter((e,i)=>e>500)
+    console.log(fit);
+    
+    const mark = [35,80,20,90,45]
+    const pass = mark.filter((e,i)=>e>=35)
+    console.log(pass);
+    
+
+    const heros = ["Vijai","Ajith","SK","suriya"]
+    const len = heros.filter((e,i)=>e.length>4)
+    console.log(len);
+    
+    const heroes = ["Vijay","Ajith","Suriya"]
+    const change = heroes.find(heroes=>heroes === "Ajith")
+    console.log(change);
+    
+
+    const col = [100,500,800,200]
+    const fin = col.find((e,i)=>e>400)
+    console.log(fin);
+
+    const hero = ["Vijay","Ajith","Suriya"]
+    const changes = heroes.find((e,i)=>i === 2)
+    console.log(changes)
+
+    const cinema = ["GOAT","LEO","MASTER"]
+    const changess = cinema.find((e,i)=>i === 1)
+    console.log(changess)
+    
+
+    const marks = [35,80,20,90,45]
+    const result = marks.some(marks=>marks<35)
+    console.log(result);
+    
+
+    
+</script>

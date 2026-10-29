@@ -1,0 +1,261 @@
+External_syntax
+
+h1{
+    properties:value;
+    properties:value:
+}
+
+p{
+    properties:value;
+    properties:value;
+}
+
+h1{
+    properties:value;
+    properties:value:
+}
+
+p{
+    properties:value;
+    properties:value;
+}
+
+h1{
+    properties:value;
+    properties:value:
+}
+
+p{
+    properties:value;
+    properties:value;
+}
+
+h1{
+    properties:value;
+    properties:value:
+}
+
+p{
+    properties:value;
+    properties:value;
+}
+
+h1{
+    properties:value;
+    properties:value:
+}
+
+p{
+    properties:value;
+    properties:value;
+}
+
+h1{
+    properties:value;
+    properties:value:
+}
+
+p{
+    properties:value;
+    properties:value;
+}
+
+h1{
+    properties:value;
+    properties:value:
+}
+
+p{
+    properties:value;
+    properties:value;
+}
+
+h1{
+    properties:value;
+    properties:value:
+}
+
+p{
+    properties:value;
+    properties:value;
+}
+
+h1{
+    properties:value;
+    properties:value:
+}
+
+p{
+    properties:value;
+    properties:value;
+}
+
+h1{
+    properties:value;
+    properties:value:
+}
+
+p{
+    properties:value;
+    properties:value;
+}
+
+h1{
+    properties:value;
+    properties:value:
+}
+
+p{
+    properties:value;
+    properties:value;
+}
+
+h1{
+    properties:value;
+    properties:value:
+}
+
+p{
+    properties:value;
+    properties:value;
+}
+
+h1{
+    properties:value;
+    properties:value:
+}
+
+p{
+    properties:value;
+    properties:value;
+}
+
+h1{
+    properties:value;
+    properties:value:
+}
+
+p{
+    properties:value;
+    properties:value;
+}
+
+h1{
+    properties:value;
+    properties:value:
+}
+
+p{
+    properties:value;
+    properties:value;
+}
+
+h1{
+    properties:value;
+    properties:value:
+}
+
+p{
+    properties:value;
+    properties:value;
+}
+
+h1{
+    properties:value;
+    properties:value:
+}
+
+p{
+    properties:value;
+    properties:value;
+}
+
+h1{
+    properties:value;
+    properties:value:
+}
+
+p{
+    properties:value;
+    properties:value;
+}
+
+h1{
+    properties:value;
+    properties:value:
+}
+
+p{
+    properties:value;
+    properties:value;
+}
+
+h1{
+    properties:value;
+    properties:value:
+}
+
+p{
+    properties:value;
+    properties:value;
+}
+
+h1{
+    properties:value;
+    properties:value:
+}
+
+p{
+    properties:value;
+    properties:value;
+}
+
+h1{
+    properties:value;
+    properties:value:
+}
+
+p{
+    properties:value;
+    properties:value;
+}
+
+h1{
+    properties:value;
+    properties:value:
+}
+
+p{
+    properties:value;
+    properties:value;
+}
+
+h1{
+    properties:value;
+    properties:value:
+}
+
+p{
+    properties:value;
+    properties:value;
+}
+
+h1{
+    properties:value;
+    properties:value:
+}
+
+p{
+    properties:value;
+    properties:value;
+}
+
+h1{
+    properties:value;
+    properties:value:
+}
+
+p{
+    properties:value;
+    properties:value;
+}

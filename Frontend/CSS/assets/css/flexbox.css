@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.parent{
+    display: flex;
+    margin: 10px;
+}
+.box{
+    background-color: yellow;
+    color: black;
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+}

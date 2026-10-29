@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.parent{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.box{
+    background-color: rgb(160, 102, 102);
+    color: black;
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+}
+.parent-one{
+    display: flex;
+    justify-content:space-around;
+    margin: 10px;
+}
+.parent-two{
+    display: flex;
+    justify-content:space-between;
+    margin: 10px;
+}
+.parent-three{
+    display: flex;
+    justify-content:space-evenly;
+    margin: 10px;
+}
+.parent-four{
+    display: flex;
+    justify-content:end;
+    margin: 10px;
+}
+.parent-five{
+    display: flex;
+    justify-content: start;
+    margin: 10px;
+}

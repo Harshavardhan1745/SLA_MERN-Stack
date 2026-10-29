@@ -1,0 +1,124 @@
+<script>
+  let name = "harsha"
+  function hero() {
+    console.log(name);
+    if (name === "harsha") {
+      console.log('crt name');
+    }
+
+  }
+  hero()
+
+
+  function mov() {
+    const movie = () => {
+      let collection = 800
+      console.log(collection);
+
+    }
+    movie()
+  }
+  mov()
+
+  if (true) {
+    var actor1 = "vijai"
+    let actor2 = "aijth"
+    console.log(actor2);
+
+  }
+  console.log(actor1);
+
+
+  const showMovie = () => {
+    let name = "GOAT Movie Released"
+    console.log(name);
+  }
+
+  showMovie()
+
+  const add = (a, b) => {
+    let c = a + b
+    console.log(c);
+
+  }
+
+  add(10, 20)
+
+  function booking(ticket) {
+    ticket()
+  }
+  booking(() => {
+    console.log("Booking Confirmed");
+
+  })
+
+  setTimeout(() => {
+    console.log("Movie Started");
+
+  }, 2000)
+
+
+  function processOrder(Order) {
+    Order("Received")
+  }
+  processOrder((namee) => {
+    console.log(`
+    Order ${namee}
+    Order Delivered`);
+
+  })
+
+
+
+  function outer() {
+    let count = 0
+    function inner() {
+      count++
+      console.log(count);
+
+
+    }
+    return inner;
+
+  }
+  const result = outer()
+  result()
+  result()
+  result()
+
+  function bank() {
+    let balance = 5000
+    return{
+      deposit(amount){
+        balance += amount;
+        console.log(`Deposited : ${amount}`);
+        
+      } ,
+      withdraw(amount){
+        if(balance <= amount){
+          balance -= amount
+          console.log(`Withdrawn : ${amount}`);
+          
+        }else{
+          console.log("Insufficient balance");
+          
+        }
+      },
+      checkbalanace(){
+        console.log(`Current Balance : ${balance}`);
+        
+      }
+    } 
+  }
+
+  const amount = bank()
+  
+  amount.checkbalanace()
+  amount.deposit(5000)
+  amount.checkbalanace()
+  amount.withdraw(4000)
+  amount.checkbalanace()
+
+
+  
+</script>

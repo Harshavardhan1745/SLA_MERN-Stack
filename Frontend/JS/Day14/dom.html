@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1 id="title">Welcome</h1>
+    
+    <button onclick="change()">change content</button>
+
+
+    <p class="course">React</p>
+
+    <a href="#" id="website">Visit</a>
+
+    <input type="text" id="username" placeholder="..">
+
+<!--     
+    <img src="old img" id="hero" alt=""> -->
+
+    
+
+
+    <script>
+        function change(){
+            document.getElementById("title").innerText = "Welcome to JavaScript DOM"
+            document.querySelector(".course").innerText = "MERN Stack"
+            document.getElementById("username").value = "harsha"
+            let link = document.getElementById("website")
+            link.href = "https://google.com"
+           
+        }
+
+        //  function changeimg(){
+        //   const img =  document.querySelector("#hero")
+        //   img.src = "new img " 
+        // } 
+
+
+        function changelink(){
+           
+        }
+        
+    </script>
+</body>
+</html>

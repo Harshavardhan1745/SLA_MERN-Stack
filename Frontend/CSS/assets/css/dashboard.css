@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.head{
+    background-color:  #071A31;
+    color: white;
+}
+.parent{
+    display: flex;
+    justify-content:space-between;
+    padding: 20px;
+    margin-left: 60px;
+    margin-right: 40px;
+}
+.cpbtn{
+    border: rgba(255, 255, 255, 0.467);
+    border-style: dotted;
+    background-color: #071A31;
+    color: rgba(255, 255, 255, 0.699);
+    width: 100px;
+    border-radius: 3px;
+}
+.child{
+    display: flex;
+    gap: 10px;
+}
+.headbtn{
+    border: rgba(255, 255, 255, 0.551);
+    background-color: #071A31;
+    color: white;
+    border-style: solid;
+    border-radius: 6px;
+    padding: 4px;
+    width: 130px;
+}
+.navbar{
+    display: flex;
+    margin-left: 60px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    gap: 20px;
+    font-size: 15px;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+.mainbox{
+    display:grid;
+    padding: 20px;
+    background-color: rgba(211, 211, 211, 0.732);
+    height: 100vh;
+}
+.submain{
+    display:flex;
+    justify-content: center;
+    height: fit-content;
+}
+.parent-one{
+    background-color: white;
+    color: black;
+    width: 1000px;
+    padding: 20px;
+    border-radius: 8px;
+}
+.child-one{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.subchild {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.submain-one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    gap: 20px;
+    width: 1000px;
+    border-radius: 8px;
+}
+.addbtn{
+    background-color: rgba(255, 68, 0, 0.897);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    width: 85px;
+    height: 40px;
+}
+.child-two{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.maintrainer{
+    display: grid;
+    place-items: center;
+}
+.trainerbox{
+    display: flex;
+    background-color: white;
+    width: 1000px;
+    border-radius: 8px;
+    padding: 30px;
+}
+.trainer{
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+.trainerchild{
+    display:grid;
+    grid-template-columns: 1fr;
+}
+.trainerchild-one{
+    display: grid;
+    grid-template-columns:200px 1fr 1fr 1fr;
+    gap: 10px;
+}

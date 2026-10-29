@@ -1,0 +1,45 @@
+<script>
+    let arr = ["Leo", "GOAT", "Master",]
+    let change = arr.push("Ghilli")
+    let neww = arr.pop(2)
+    console.log(neww);
+    console.log(change);
+    console.log(arr);
+
+    let herosList = ["Ajith", "Suriya", "SK"]
+    let newHeroslist = herosList.unshift("Vijai")
+    // let changeHeros = herosList.shift()
+    console.log('New name added', herosList);
+    let changeHeros = herosList.shift()
+    console.log('removed first name', changeHeros);
+    console.log('Final list', herosList);
+
+    let fruitManage = ["Apple", "Mango", "Orange"]
+    let addFruits = fruitManage.push("Banana", "Grapes")
+    console.log(fruitManage);
+    console.log('New fruits list', fruitManage, addFruits);
+    let removeFruits = fruitManage.pop()
+    console.log('One of the fruits is removed from list', fruitManage);
+    let addFirst = fruitManage.unshift("Pineapple")
+    console.log('first element added', fruitManage);
+    let remove = fruitManage.shift()
+    console.log('final fruit list', fruitManage);
+
+
+    let obj = { name: "Harsha", course: "MERN", city: "Chennai" }
+    console.log('Student name :', obj.name);
+    console.log('Course :', obj.course);
+    console.log('city :', obj["city"]);
+
+
+    let mobileStore = [{ brand: "Iphone", price: 80000 },
+    { brand: "OnePlus", price: 40000 },
+    { brand: "Samsung", price: 20000 }
+    ]
+    for (m = 0; m <= mobileStore.length; m++) {
+        console.log(mobileStore[m].brand + "-" + mobileStore[m].price);
+    }
+
+
+
+</script>

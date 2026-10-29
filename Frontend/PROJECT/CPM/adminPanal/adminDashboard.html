@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Track</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="../assets/favicon_io (1)/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+    <main class="grid grid-cols-[280px_1fr] h-screen">
+        <aside class="bg-white shadow-xl ">
+            <!-- logo -->
+            <div class="flex items-center gap-2 p-2">
+                <img src="../assets/dashboard_logo.png" alt="logo" width="90" height="90" class="pb-2">
+                <div class="flex flex-col">
+                    <h1 class="text-2xl font-bold leading-none">
+                        <span class="text-[#082850]">BUILD</span><span class="text-orange-600">TRACK</span>
+                    </h1>
+
+                    <p class="text-xs text-gray-400 mt-1">
+                        Construction Project Monitoring
+                    </p>
+                </div>
+            </div>
+            <hr>
+
+            <!-- menu -->
+
+            <div class="flex flex-col justify-between">
+                <ul class="flex flex-col gap-6 p-4">
+                    <li><a href="#" class="p-2 rounded-lg bg-[#082850] text-white"><i
+                                class="fa-solid fa-table-cells-large"></i> Dashboard</a></li>
+                    <li><a href="projectDetails.html" class="p-2 rounded-lg hover:bg-[#082850] hover:text-white"><i
+                                class="fa-solid fa-trowel-bricks"></i> Projects</a></li>
+                    <li><a href="../adminPanal/workerDetails.html"
+                            class="p-2 rounded-lg hover:bg-[#082850] hover:text-white"><i class="fa-solid fa-users"></i>
+                            Workers</a></li>
+                    <li><a href="materialsDetails.html" class="p-2 rounded-lg hover:bg-[#082850] hover:text-white"><i
+                                class="fa-solid fa-box"></i> Materials</a></li>
+                    <li><a href="Schedule.html" class="p-2 rounded-lg hover:bg-[#082850] hover:text-white"><i
+                                class="fa-solid fa-calendar-days"></i> Schedule</a></li>
+                    <li><a href="siteMonitoring.html" class="p-2 rounded-lg hover:bg-[#082850] hover:text-white"><i
+                                class="fa-solid fa-location-dot"></i> Site Monitoring</a></li>
+                    <li><a href="#" class="p-2 rounded-lg hover:bg-[#082850] hover:text-white"><i
+                                class="fa-solid fa-chart-line"></i> Reports</a></li>
+                    <li><a href="#" class="p-2 rounded-lg hover:bg-[#082850] hover:text-white"><i
+                                class="fa-solid fa-triangle-exclamation"></i> Issues</a></li>
+                </ul>
+                <hr>
+                <ul class="flex flex-col gap-6 p-4">
+                    <li><a href="#" class="p-2 rounded-lg hover:bg-[#082850] hover:text-white"><i
+                                class="fa-solid fa-gear"></i> Settings</a></li>
+                    <li><a href="../adminPanal/adminPanel.html"
+                            class="p-2 rounded-lg hover:bg-[#082850] hover:text-white"><i
+                                class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- main content  -->
+
+        <section class="bg-gray-100 p-3 overflow-y-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-6 gap-6">
+                <div
+                    class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 min-h-[160px]">
+                    <div class="flex justify-between items-start h-full">
+                        <div class="flex flex-col justify-between">
+                            <div>
+                                <p class="text-sm font-medium text-gray-500">
+                                    Total Projects
+                                </p>
+                                <h1 id="totalcount" class="text-4xl font-bold text-slate-800 mt-2">
+                                    25
+                                </h1>
+                            </div>
+                            <p class="text-sm text-green-600 mt-6">
+                                ↑ +12% from last month
+                            </p>
+                        </div>
+                        <div
+                            class="w-14 h-14 rounded-xl border border-gray-200 flex items-center justify-center text-2xl ">
+                            <i class="fa-solid fa-building "></i>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 min-h-[160px]">
+                    <div class="flex justify-between items-start h-full">
+                        <div class="flex flex-col justify-between">
+                            <div>
+                                <p class="text-sm font-medium text-gray-500">
+                                    Active Workers
+                                </p>
+                                <h1 id="activewrkcount" class="text-4xl font-bold text-slate-800 mt-2">
+                                    450
+                                </h1>
+                            </div>
+                            <p class="text-sm text-green-600 mt-6">
+                                ↑ +18 this week
+                            </p>
+                        </div>
+                        <div
+                            class="w-14 h-14 rounded-xl border border-gray-200 flex items-center justify-center text-2xl">
+                            <i class="fa-solid fa-users text-pink-500"></i>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 min-h-[160px]">
+                    <div class="flex justify-between items-start h-full">
+                        <div class="flex flex-col justify-between">
+                            <div>
+                                <p class="text-sm font-medium text-gray-500">
+                                    Completed Projects
+                                </p>
+                                <h1 class="text-4xl font-bold text-slate-800 mt-2">
+                                    08
+                                </h1>
+                            </div>
+                            <p class="text-sm text-green-600 mt-6">
+                                ↑ +2 completed
+                            </p>
+                        </div>
+                        <div
+                            class="w-14 h-14 rounded-xl border border-gray-200 flex items-center justify-center text-2xl">
+                            <i class="fa-solid fa-square-check text-green-500"></i>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 min-h-[160px]">
+                    <div class="flex justify-between items-start h-full">
+                        <div class="flex flex-col justify-between">
+                            <div>
+                                <p class="text-sm font-medium text-gray-500">
+                                    Ongoing Sites
+                                </p>
+                                <h1 class="text-4xl font-bold text-slate-800 mt-2">
+                                    12
+                                </h1>
+                            </div>
+                            <p class="text-sm text-blue-600 mt-6">
+                                3 nearing completion
+                            </p>
+                        </div>
+                        <div
+                            class="w-14 h-14 rounded-xl border border-gray-200 flex items-center justify-center text-2xl">
+                            <i class="fa-solid fa-location-dot text-blue-500"></i>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 min-h-[160px]">
+                    <div class="flex justify-between items-start h-full">
+                        <div class="flex flex-col justify-between">
+                            <div>
+                                <p class="text-sm font-medium text-gray-500">
+                                    Budget Used
+                                </p>
+                                <h1 class="text-4xl font-bold text-slate-800 mt-2">
+                                    ₹4.8 Cr
+                                </h1>
+                            </div>
+                            <p class="text-sm text-yellow-600 mt-6">
+                                60% utilized
+                            </p>
+                        </div>
+                        <div
+                            class="w-14 h-14 rounded-xl border border-gray-200 flex items-center justify-center text-2xl">
+                            <i class="fa-solid fa-sack-dollar text-yellow-500"></i>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 min-h-[160px]">
+                    <div class="flex justify-between items-start h-full">
+                        <div class="flex flex-col justify-between">
+                            <div>
+                                <p class="text-sm font-medium text-gray-500">
+                                    Pending Issues
+                                </p>
+                                <h1 class="text-4xl font-bold text-slate-800 mt-2">
+                                    07
+                                </h1>
+                            </div>
+                            <p class="text-sm text-red-600 mt-6">
+                                2 High Priority
+                            </p>
+                        </div>
+                        <div
+                            class="w-14 h-14 rounded-xl border border-gray-200 flex items-center justify-center text-2xl">
+                            <i class="fa-solid fa-triangle-exclamation text-red-500"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="mt-4">
+                <div class="grid grid-cols-0 md:grid-cols-1 xl:grid-cols-2 gap-6">
+                    <div class="bg-white p-4 rounded shadow-md">
+                        <div>
+                            <h1 class="text-xl font-medium">📈 Project Progress</h1>
+                        </div>
+                        <div class="flex flex-col gap-4 p-4">
+                            <div>
+                                <h1 class="mb-1 text-sm text-gray-500 font-medium">Hospital Building</h1>
+                                <div class="progress">
+                                    <div class="progress-bar bg-success progress-fill" role="progressbar"
+                                        style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">80%
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h1 class="mb-1 text-sm text-gray-500 font-medium">Apartment </h1>
+                                <div class="progress">
+                                    <div class="progress-bar bg-warning progress-fill" role="progressbar"
+                                        style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">60%
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h1 class="mb-1 text-sm text-gray-500 font-medium">Bridge Project</h1>
+                                <div class="progress">
+                                    <div class="progress-bar bg-success progress-fill" role="progressbar"
+                                        style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">90%
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h1 class="mb-1 text-sm text-gray-500 font-medium">Mall Construction </h1>
+                                <div class="progress">
+                                    <div class="progress-bar bg-danger progress-fill" role="progressbar"
+                                        style="width: 40%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">40%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-4 rounded shadow-md">
+                        <h1 class="text-xl font-medium">📅 Upcoming Deadlines</h1>
+                        <div class="p-4 flex flex-col gap-4">
+                            <div class="bg-red-600 text-white p-2 rounded flex justify-between">
+                                <div class="mx-3">
+                                    <h1 class=" font-medium">🏥 Hospital Building </h1>
+                                    <p>⏳ 5 Days Left</p>
+                                </div>
+                                <div class="mx-4">
+                                    <h1>Jul 25</h1>
+                                    <p>High </p>
+                                </div>
+                            </div>
+                            <div class="bg-green-600 text-white p-2 rounded flex justify-between">
+                                <div class="mx-3">
+                                    <h1 class=" font-medium"> 🛍️ Mall Construction </h1>
+                                    <p>⏳ 26 Days Left </p>
+                                </div>
+                                <div class="mx-4">
+                                    <h1>Aug 15 </h1>
+                                    <p>Low </p>
+                                </div>
+                            </div>
+                            <div class="bg-yellow-500 text-white p-2 rounded flex justify-between">
+                                <div class="mx-3">
+                                    <h1 class=" font-medium">🏢 Apartment Project </h1>
+                                    <p>⏳ 13 Days Left </p>
+                                </div>
+                                <div class="mx-4">
+                                    <h1>Aug 02</h1>
+                                    <p>Medium </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="mt-3">
+                <div class="grid grid-cols-0 md:grid-cols-1 xl:grid-cols-3 gap-6">
+                    <!-- quick action -->
+                    <div class="bg-white p-4 rounded shadow-md">
+                        <div>
+                            <h1 class="text-xl font-medium"><i class="fa-solid fa-bolt text-orange-500"></i> Quick
+                                Actions </h1>
+                            <ul class="flex flex-col gap-3 p-4">
+                                <li
+                                    class="flex justify-between items-center hover:bg-blue-200 hover:text-white p-2 rounded">
+                                    <div>
+                                        <a href="#"><i class="fa-solid fa-plus text-blue-700"></i>
+                                            Add Project</a>
+                                    </div><i class="fa-solid fa-arrow-right"></i>
+                                </li>
+                                <li
+                                    class="flex justify-between items-center hover:bg-blue-200 hover:text-white p-2 rounded">
+                                    <div>
+                                        <a href="#"><i class="fa-solid fa-user-plus text-blue-500"></i> Add Worker</a>
+                                    </div>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </li>
+                                <li
+                                    class="flex justify-between items-center hover:bg-blue-200 hover:text-white p-2 rounded">
+                                    <div>
+                                        <a href="#"><i class="fa-solid fa-cubes text-blue-500"></i> Add Material </a>
+                                    </div>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </li>
+                                <li
+                                    class="flex justify-between items-center hover:bg-blue-200 hover:text-white p-2 rounded">
+                                    <div>
+                                        <a href="#"><i class="fa-solid fa-calendar-check text-orange-500"></i> Schedule
+                                            Meeting </a>
+                                    </div>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </li>
+                                <li
+                                    class="flex justify-between items-center hover:bg-blue-200 hover:text-white p-2 rounded">
+                                    <div>
+                                        <a href="#"><i class="fa-solid fa-file-lines text-gray-500"></i> Generate Report
+                                        </a>
+                                    </div>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </li>
+                                <li
+                                    class="flex justify-between items-center hover:bg-blue-200 hover:text-white p-2 rounded">
+                                    <div>
+                                        <a href="#"><i class="fa-solid fa-triangle-exclamation text-red-500"></i> Report
+                                            Issue </a>
+                                    </div>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!--   Weather & Site Status   -->
+
+                    <div class="bg-white p-4 rounded shadow-md">
+                        <h1 class="text-xl font-medium"> <i class="fa-solid fa-cloud-sun text-yellow-500"></i> Weather &
+                            Site Status </h1>
+                        <div>
+                            <div class="flex flex-col p-4 gap-3">
+                                <h1><i class="fa-solid fa-temperature-half text-red-500"></i> Temperature : 31°C </h1>
+                                <h1><i class="fa-solid fa-cloud text-gray-300"></i> Condition : Sunny </h1>
+                                <h1><i class="fa-solid fa-droplet text-blue-400"></i> Humidity : 65% </h1>
+                                <h1> <i class="fa-solid fa-wind"></i> Wind Speed : 14 km/h</h1>
+                            </div>
+                            <h1>───────── Site Status ─────────</h1>
+                            <div class="flex flex-col p-4 gap-3">
+                                <h1><i class="fa-solid fa-circle text-green-500"></i> Site A - <span
+                                        class="text-green-700 font-semibold">Safe</span></h1>
+                                <h1><i class="fa-solid fa-circle text-yellow-500"></i> Site B - <span
+                                        class="font-semibold text-yellow-600">Inspection Due </span></h1>
+                                <h1><i class="fa-solid fa-circle text-red-500"></i> Site C - <span
+                                        class="font-semibold text-red-700">Work Delayed</span></h1>
+                                <h1><i class="fa-solid fa-circle text-green-500"></i> Site D - <span
+                                        class="text-green-700 font-semibold">On Schedule</span></h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recent Activities -->
+
+                    <div class="bg-white p-4 rounded shadow-md">
+                        <h1 class="text-xl font-medium"><i class="fa-solid fa-clock text-gray-500"></i> Recent
+                            Activities</h1>
+                        <div class="flex flex-col gap-4 p-3 mt-4">
+                            <div class="flex justify-between ">
+                                <div class="mx-1">
+                                    <h1 class="font-medium "><i class="fa-solid fa-circle text-green-500"></i> Project
+                                        Created </h1>
+                                    <p class="text-sm text-gray-700"><i class="fa-solid fa-hospital text-gray-400"></i>
+                                        Hospital Building added</p>
+                                </div>
+                                <div class="mx-1">
+                                    <p> 10 mins ago</p>
+                                </div>
+                            </div>
+                            <div class="flex justify-between ">
+                                <div class="mx-1">
+                                    <h1 class="font-medium "><i class="fa-solid fa-circle text-blue-500"></i>Worker
+                                        Assigned</h1>
+                                    <p class="text-sm text-gray-700"><i class="fa-solid fa-user"></i>Ravi assigned to
+                                        Site A</p>
+                                </div>
+                                <div class="mx-1">
+                                    <p> 25 mins ago</p>
+                                </div>
+                            </div>
+                            <div class="flex justify-between ">
+                                <div class="mx-1">
+                                    <h1 class="font-medium "><i class="fa-solid fa-circle text-yellow-500"></i> Material
+                                        Delivered </h1>
+                                    <p class="text-sm text-gray-700"><i class="fa-solid fa-box"></i>Cement - 200 Bags
+                                    </p>
+                                </div>
+                                <div class="mx-1">
+                                    <p>1 hour ago</p>
+                                </div>
+                            </div>
+                            <div class="flex justify-between ">
+                                <div class="mx-1">
+                                    <h1 class="font-medium "><i class="fa-solid fa-circle text-red-500"></i>Safety Issue
+                                    </h1>
+                                    <p class="text-sm text-gray-700"><i
+                                            class="fa-solid fa-helmet-safety text-red-500"></i>Helmet Missing</p>
+                                </div>
+                                <div class="mx-1">
+                                    <p>2 hours ago</p>
+                                </div>
+                            </div>
+                            <div class="flex justify-between ">
+                                <div class="mx-1">
+                                    <h1 class="font-medium "><i class="fa-solid fa-circle text-purple-500"></i>
+                                        Milestone Completed </h1>
+                                    <p class="text-sm text-gray-700"><i class="fa-solid fa-bridge"></i>Bridge Phase-1
+                                        Completed</p>
+                                </div>
+                                <div class="mx-1">
+                                    <p>Yesterday</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- footer -->
+
+            <footer class="bg-[#0F172A] text-gray-300 mt-10">
+                <div class="max-w-7xl mx-auto px-8 py-10">
+                    <div class="grid md:grid-cols-3 gap-10">
+                        <!-- logo -->
+
+                        <div>
+                            <h2 class="text-3xl font-bold text-white">
+                                BUILD <span class="text-orange-500">TRACK</span>
+                            </h2>
+                            <p class="mt-4 text-gray-400 leading-7">
+                                Manage construction projects efficiently with
+                                real-time tracking, worker management and
+                                project monitoring.
+                            </p>
+                            <div class="mt-5 space-y-2">
+                                <p><i class="fa-solid fa-location-dot text-orange-500"></i> Chennai, India</p>
+                                <p><i class="fa-solid fa-envelope text-orange-500"></i> support@buildtrack.com</p>
+                                <p><i class="fa-solid fa-phone text-orange-500"></i> +91 6374257432</p>
+                            </div>
+                        </div>
+
+                        <!-- quick Links -->
+
+                        <div>
+                            <h3 class="text-xl font-semibold text-white mb-4">
+                                Quick Links
+                            </h3>
+                            <ul class="space-y-3">
+                                <li><a href="#" class="hover:text-orange-500 duration-300">Dashboard</a></li>
+                                <li><a href="#" class="hover:text-orange-500 duration-300">Projects</a></li>
+                                <li><a href="#" class="hover:text-orange-500 duration-300">Workers</a></li>
+                                <li><a href="#" class="hover:text-orange-500 duration-300">Reports</a></li>
+                                <li><a href="#" class="hover:text-orange-500 duration-300">Settings</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- social -->
+
+                        <div>
+                            <h3 class="text-xl font-semibold text-white mb-4">
+                                Follow Us
+                            </h3>
+                            <div class="flex gap-4 text-2xl">
+                                <a href="#"
+                                    class="w-12 h-12 rounded-full bg-slate-700 flex items-center justify-center hover:bg-orange-500 duration-300">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                                <a href="#"
+                                    class="w-12 h-12 rounded-full bg-slate-700 flex items-center justify-center hover:bg-orange-500 duration-300">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a href="#"
+                                    class="w-12 h-12 rounded-full bg-slate-700 flex items-center justify-center hover:bg-orange-500 duration-300">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </a>
+                            </div>
+                            <p class="mt-5 text-gray-400">
+                                Stay updated with the latest project reports and announcements.
+                            </p>
+                        </div>
+                    </div>
+                    <hr class="border-slate-700 my-8">
+                    <div class="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+                        <p>© 2026 Build Track. All Rights Reserved.</p>
+                        <p>
+                            Designed with by
+                            <span class="text-orange-500 font-semibold">
+                                Harshavardhan G
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </footer>
+        </section>
+
+    </main>
+
+
+    <script src="https://kit.fontawesome.com/c219e56bfb.js" crossorigin="anonymous"></script>
+
+    <script>
+        const counter = document.getElementById("totalcount");
+        let count = 0;
+        let target = 25;
+        let interval = setInterval(() => {
+            count++;
+            counter.innerText = count;
+            if (count >= target) {
+                clearInterval(interval);
+            }
+        }, 20);
+
+        const counters = document.getElementById("activewrkcount");
+        let counts = 0;
+        let targets = 450;
+        let intervals = setInterval(() => {
+            counts++;
+            counters.innerText = counts;
+            if (counts >= targets) {
+                clearInterval(intervals);
+            }
+        }, 1);
+
+
+        window.addEventListener("load", () => {
+
+            const bars = document.querySelectorAll(".progress-fill");
+
+            bars.forEach((bar, index) => {
+
+                const width = bar.dataset.width;
+
+                setTimeout(() => {
+                    bar.style.width = width + "%";
+                }, index * 300);
+
+            });
+
+        });
+    </script>
+</body>
+
+</html>

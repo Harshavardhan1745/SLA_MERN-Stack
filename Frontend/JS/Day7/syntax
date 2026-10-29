@@ -1,0 +1,182 @@
+/* function() {
+    console.log()
+}
+function() {
+    console.log();
+}
+function() {
+    console.log()
+}
+function() {
+    console.log();
+}
+function() {
+    console.log()
+}
+function() {
+    console.log()
+}
+function() {
+    console.log();
+}
+function() {
+    console.log()
+}
+function() {
+    console.log()
+}
+function() {
+    console.log()
+}
+function() {
+    console.log()
+}
+function() {
+    console.log()
+}
+function() {
+    console.log();
+}
+function() {
+    console.log()
+}
+function() {
+    console.log();
+}
+function() {
+    console.log()
+}
+function() {
+    console.log()
+}
+function() {
+    console.log()
+}
+function() {
+    console.log()
+}
+function() {
+    console.log{ }
+}
+const name = () => {
+
+}
+const app = () => {
+
+}
+const harsha = () => {
+
+}
+const num = () => {
+
+}
+const had = () => {
+
+}
+const obito = () => {
+
+}
+const val = () => {
+
+}
+const dbgf = () => {
+
+}
+const orange = () => {
+
+}
+const student = () => {
+
+}
+const study = () => {
+
+}
+const heros = () => {
+
+}
+const total = () => {
+
+}
+const total = () => {
+
+}
+const total = () => {
+
+}
+const total = () => {
+
+}
+const total = () => {
+
+}
+const total = () => {
+
+}
+const total = () => {
+
+}
+const total = () => {
+
+}//array  
+let array = ["value1", "value2", "value3"]
+let apple = ["value", "value", "value"]
+let arr = ["value", "value", "value"]
+let apple = ["value", "value", "value"]
+let arr = ["value", "value", "value"]
+let apple = ["value", "value", "value"]
+let arr = ["value", "value", "value"]
+let apple = ["value", "value", "value"]
+let arr = ["value", "value", "value"]
+let apple = ["value", "value", "value"]
+let arr = ["value", "value", "value"]
+let apple = ["value", "value", "value"]
+let arr = ["value", "value", "vlaue"]
+let arr = ["value", "value", "value"]
+let apple = ["value", "value", "value"]
+let arr = ["value", "value", "value"]
+let apple = ["value", "value", "value"]
+let arr = ["value", "value", "value"]
+let apple = ["value", "value", "value"]
+let arr = ["value", "value", "value"]
+//object
+let obj = { key: "value", key: "value" }
+let obj = { key: "value", key: "value" }
+let newobj = { key: "value", key: "value" }
+let obj = { key: "vlaue", Key: "valie" }
+let newobj = { key: "value", key: "value" }
+let obj = { key: "value", key: "value" }
+let newobj = { key: "value", key: "value" }
+let obj = { key: "value", key: "value" }
+let newobj = { key: "value", key: "value" }
+let obj = { key: "value", key: "value" }
+let newobj = { key: "value", key: "value" }
+let obj = { key: "value", key: "value" }
+let newobj = { key: "value", key: "value" }
+let obj = { key: "value", key: "value" }
+let newobj = { key: "value", key: "value" }
+let obj = { key: "value", key: "value" }
+let newobj = { key: "value", key: "value" }
+let obj = { key: "value", key: "value" }
+let newobj = { key: "value", key: "value" }
+let obj = { key: "value", key: "value" }
+//nested object
+let newobj = { key: "value", key: { key: "value" } }
+let obj = { key: "value", key: { key: "value" } }
+let newobj = { key: "value", key: { key: "value" } }
+let obj = { key: "value", key: { key: "value" } }
+let newobj = { key: "value", key: { key: "value" } }
+let obj = { key: "value", key: { key: "value" } }
+let newobj = { key: "value", key: { key: "value" } }
+let obj = { key: "value", key: { key: "value" } }
+let newobj = { key: "value", key: { key: "value" } }
+let obj = { key: "value", key: { key: "value" } }
+let newobj = { key: "value", key: { key: "value" } }
+let obj = { key: "value", key: { key: "value" } }
+let newobj = { key: "value", key: { key: "value" } }
+let obj = { key: "value", key: { key: "value" } }
+let newobj = { key: "value", key: { key: "value" } }
+let obj = { key: "value", key: { key: "value" } }
+let newobj = { key: "value", key: { key: "value" } }
+let obj = { key: "value", key: { key: "value" } }
+let newobj = { key: "value", key: { key: "value" } }
+let obj = { key: "value", key: { key: "value" } } */

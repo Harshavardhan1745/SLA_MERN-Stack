@@ -1,0 +1,24 @@
+
+.head {
+    background-color: black;
+    color: antiquewhite;
+}
+.head-one {
+    background-color: brown;
+    color: antiquewhite;
+}
+.head-two {
+    background-color: rgb(243, 142, 11);
+    color: rgb(245, 240, 240);
+}
+.head-three {
+    background-color: crimson;
+    color: bisque;
+}
+.head-four {
+    background-color: violet;
+    color: antiquewhite;
+}
+h1 p {
+    margin: 0px;
+}

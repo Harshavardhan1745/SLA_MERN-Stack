@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task page</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <div class="profile">
+                <div>
+                    <img src="CSS/assets/image/profile/profile.jpeg" alt="loading" class="rounded-full">
+                </div>
+                <div class="flex flex-col gap-2 mt-4">
+                    <h1 class="font-bold ">Harshavardhan G</h1>
+                    <p class="text-sm">Frontend Developer</p>
+                </div>
+            </div>
+            <ul class="menu flex flex-col gap-5 ">
+                <li class="hover:-translate-y-2">Dashboard</li>
+                <li class="hover:-translate-y-2">HTML Task</li>
+                <li class="hover:-translate-y-2">CSS Task</li>
+                <li class="hover:-translate-y-2">Bootstrap Task</li>
+                <li class="hover:-translate-y-2">Tailwind Task</li>
+                <li class="hover:-translate-y-2">Javascript Task</li>
+            </ul>
+        </aside>
+    </div>
+    <main>
+        <div class="main-content">
+            <section class="welcomecard shadow-lg">
+                <div>
+                    <h1>Welcome,It's Harsha Dashboard</h1>
+                    <p>Frontend & UI/UX Learner</p>
+                </div>
+                <button class="welcomecard-btn hover:-translate-x-2">View Resume</button>
+            </section>
+            <section>
+                <div class="grid grid-cols-2 gap-5 mt-4">
+                    <div class="aboutcard shadow-lg">
+                        <h2 class="font-bold text-xl">About me</h2>
+                        <p class="p-2 text-gray-500">I am Harsha, a CSE final year student interested in Frontend
+                            Development and UI/UX Design. I am currently learning HTML, CSS, Bootstrap, Tailwind CSS and
+                            JavaScript by creating real-time projects.</p>
+                    </div>
+                    <div class="aboutcard shadow-lg">
+                        <div>
+                            <h2 class="font-bold text-xl">Social Links</h2>
+                        </div>
+                        <div class="flex flex-col gap-2 p-2">
+                            <a href="#"
+                                class="bg-gray-100 text-black p-3 rounded-md hover:bg-blue-500 hover:text-white">GitHub</a>
+                            <a href="#"
+                                class="bg-gray-100 text-black p-3 rounded-md hover:bg-blue-500 hover:text-white">Linkedin</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="grid grid-cols-3 gap-6 mt-6">
+                    <div class="bg-white rounded-md shadow-lg p-5 hover:scale-110">
+                        <h1 class="font-bold text-3xl text-center text-blue-500">54</h1>
+                        <p class="text-gray-500 text-center">Task Completed</p>
+                    </div>
+                    <div class="bg-white rounded-md shadow-lg p-5 hover:scale-110">
+                        <h1 class="font-bold text-3xl text-center text-blue-500">0</h1>
+                        <p class="text-gray-500 text-center">Pending</p>
+                    </div>
+                    <div class="bg-white rounded-md shadow-lg p-5 hover:scale-110">
+                        <h1 class="font-bold text-3xl text-center text-blue-500">2</h1>
+                        <p class="text-gray-500 text-center">Projects</p>
+                    </div>
+                </div>
+            </section>
+            <section class="mt-6">
+                <div class="bg-white rounded-md shadow-lg">
+                    <h1 class="pt-5 ml-4 font-bold text-2xl">My skills </h1>
+                    <ul class=" p-5 flex gap-3">
+                        <li class="bg-blue-200 p-2 text-blue-700 rounded-md shadow-lg">HTML 5</li>
+                        <li class="bg-blue-200 p-2 text-blue-700 rounded-md shadow-lg">CSS 4</li>
+                        <li class="bg-blue-200 p-2 text-blue-700 rounded-md shadow-lg">Bootstrap</li>
+                        <li class="bg-blue-200 p-2 text-blue-700 rounded-md shadow-lg">Tailwind</li>
+                        <li class="bg-blue-200 p-2 text-blue-700 rounded-md shadow-lg">UI/UX</li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <h1 class="font-bold text-2xl p-2 mt-4">Task Categories</h1>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-4">
+                    <div
+                        class="bg-white p-6 rounded-xl shadow-lg border-2 border-transparent hover:border-blue-500 hover:-translate-y-2 hover:shadow-2xl transition duration-300">
+                        <h1 class="text-xl font-bold pt-2 pb-2">HTML 5 Tasks</h1>
+                        <p class="text-gray-500 pb-2">Forms,tables,semantic tags and structure task.</p>
+                        <a href="htmltask.html" class="text-blue-700 font-bold pt-3">View Tasks ⇀</a>
+                    </div>
+                    <div
+                        class="bg-white p-6 rounded-xl shadow-lg border-2 border-transparent hover:border-blue-500 hover:-translate-y-2 hover:shadow-2xl transition duration-300">
+                        <h1 class="text-xl font-bold pt-2 pb-2"> CSS 4 Tasks</h1>
+                        <p class="text-gray-500 pb-2">Selectors,box models,flex box,grid and animatons task.</p>
+                        <a href="csstask.html" class="text-blue-700 font-bold pt-3">View Tasks ⇀</a>
+                    </div>
+                    <div
+                        class="bg-white p-6 rounded-xl shadow-lg border-2 border-transparent hover:border-blue-500 hover:-translate-y-2 hover:shadow-2xl transition duration-300">
+                        <h1 class="text-xl font-bold pt-2 pb-2">Bootstrap Tasks</h1>
+                        <p class="text-gray-500 pb-2">Navbar,cards,grid system and responsive layouts task.</p>
+                        <a href="boottail.html" class="text-blue-700 font-bold pt-3">View Tasks ⇀</a>
+                    </div>
+                    <div
+                        class="bg-white p-6 rounded-xl shadow-lg border-2 border-transparent hover:border-blue-500 hover:-translate-y-2 hover:shadow-2xl transition duration-300">
+                        <h1 class="text-xl font-bold pt-2 pb-2">Tailwind Tasks</h1>
+                        <p class="text-gray-500 pb-2">Utility classes,grid,cards and hover effects tasks.</p>
+                        <a href="tailwind.html" class="text-blue-700 font-bold pt-3">View Tasks ⇀</a>
+                    </div>
+                    <div
+                        class="bg-white p-6 rounded-xl shadow-lg border-2 border-transparent hover:border-blue-500 hover:-translate-y-2 hover:shadow-2xl transition duration-300">
+                        <h1 class="text-xl font-bold pt-2 pb-2">Javascript Tasks</h1>
+                        <p class="text-gray-500 pb-2">DOM,events,calculator,validation and logic tasks.</p>
+                        <a href="JStask.html" class="text-blue-700 font-bold pt-3">View Tasks ⇀</a>
+                    </div>
+                    <div
+                        class="bg-white p-6 rounded-xl shadow-lg border-2 border-transparent hover:border-blue-500 hover:-translate-y-2 hover:shadow-2xl transition duration-300">
+                        <h1 class="text-xl font-bold pt-2 pb-2">Addtional Tasks</h1>
+                        <p class="text-gray-500 pb-2">To improve my skills</p>
+                        <a href="placetrack.html" class="text-blue-700 font-bold pt-3">View Tasks ⇀</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+</body>
+
+</html>

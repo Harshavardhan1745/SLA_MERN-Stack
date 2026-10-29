@@ -1,0 +1,101 @@
+<script>
+    let arr = ["Ajith", "Vijai", "STR", "Allu Ariun", "Dhanush"]
+    let emptyarr = []
+    let index = 0
+    for (let i = arr.length - 1; i >= 0; i--) {
+        emptyarr[index] = arr[i];
+        index++
+    }
+    console.log(emptyarr)
+
+    let heros = ["Vijay", "Ajith", "Suriya", "SK"]
+
+    for (let f = 0; f < heros.length; f++) {
+        console.log(heros[f]);
+
+    }
+
+    let moviesCollecions = [200, 500, 800, 400, 600]
+    let hightest = moviesCollecions[0]
+    for (let i = 1; i < moviesCollecions.length; i++) {
+        if (moviesCollecions[i] > hightest) {
+            hightest = moviesCollecions[i]
+        }
+    }
+    console.log(hightest);
+
+    let moviesCollecionss = [200, 500, 800, 400, 600]
+    let high = moviesCollecions[0]
+    for (let i = 1; i < moviesCollecionss.length; i++) {
+        if (moviesCollecions[i] < high) {
+            high = moviesCollecionss[i]
+        }
+    }
+    console.log(high);
+
+    let movies = [200, 500, 800, 400, 600]
+    let highs = 0
+    for (let h = 1; h < movies.length; h++) {
+        highs = highs + movies[h]
+    }
+    let avg = highs / movies.length
+    console.log(avg);
+
+
+    let names = ["Vijay", "Ajith", "Suriya", "SK"]
+    let empty = []
+    let ind = 0
+    for (let r = names.length - 1; r >= 0; r--) {
+        empty[ind] = names[r]
+        ind++
+    }
+    console.log(empty);
+
+    let fruits = ["Apple", "Mango", "Orange", "Banana"]
+    for (let l = 0; l <= fruits.length; l++) {
+        if (fruits[1] === "Mango") {
+            console.log("Fruit found");
+        }
+
+    }
+
+
+    let fruit = ["Apple", "Mango", "Orange", "Banana"]
+    let count = 0
+    for (let value of fruit) {
+        count++
+    }
+    console.log(count);
+
+    let namee = ["Vijay", "Ajith", "Sivakarthikeyan", "SK"]
+    let long = namee[0]
+    for (let n = 1; n < namee.length; n++) {
+        if (namee[n].length > long.length) {
+            long = namee[n]
+        }
+    }
+    console.log(long);
+
+
+    let word = "level"
+    let reverse = ""
+    for (let w = word.length - 1; w >= 0; w--) {
+        reverse += word[w]
+    }
+    if (word === reverse) {
+        console.log("Palindrome");
+    } else {
+        console.log("Not a Palindrome");
+
+    }
+
+
+    let rev = "VIJAY"
+    let reversed = ""
+    for (let v = rev.length - 1; v >= 0; v--) {
+        reversed = reversed + rev[v]
+    }
+    console.log(reversed);
+    
+
+</script>

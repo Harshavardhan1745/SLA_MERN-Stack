@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <main class="flex justify-center"> 
+        <div class="flex flex-col gap-5">
+            <h1 class="text-center font-bold text-2xl p-5">Register Here</h1>
+            <div class="flex flex-col gap-5">
+                <input type="email" placeholder="Enter Email" id="userEmail" class=" border border-black rounded p-1">
+                <input type="number" placeholder="Enter number" id="userNumber" class=" border border-black rounded p-1">
+                <input type="password" placeholder="Enter password" id="userPassword" class=" border border-black rounded p-1">
+            </div>
+            <div class="text-center">
+                <button onclick="addtoArray()" class="bg-orange-500 text-white rounded p-2 w-50">Register</button>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        let arr = JSON.parse(localStorage.getItem("user")) || []
+        function addtoArray(){
+           
+            const useremail = document.getElementById("userEmail").value
+            const usernumber = document.getElementById("userNumber").value
+            const userpassword = document.getElementById("userPassword").value
+        
+        const datas = {useremail,usernumber,userpassword}
+        arr.push(datas)
+
+        localStorage.setItem("user",JSON.stringify(arr))
+
+        alert("Register completed")
+        }
+    </script>
+</body>
+</html>

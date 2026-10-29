@@ -1,0 +1,30 @@
+.card{
+    background-color: cornflowerblue ;
+    color: black;
+    padding: 20px;
+}
+a{
+    text-decoration: none;
+}
+.navbartext{
+    color: white;
+    font-size: large;
+}
+.navcard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.inpSearch{
+    width: 250px;
+    border: 0;
+    padding: 8px;
+    border-radius: 8px;
+}
+.logbtn{
+    padding: 8px;
+    width: 80px;
+    border: 0;
+    border-radius: 8px;
+    text-align: center;
+}

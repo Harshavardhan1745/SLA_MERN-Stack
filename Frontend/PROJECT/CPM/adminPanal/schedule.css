@@ -1,0 +1,10 @@
+.summary-card{
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all .3s ease;
+}
+
+.summary-card.show{
+    opacity: 1;
+    transform: translateY(0);
+}

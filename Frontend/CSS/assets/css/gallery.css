@@ -1,0 +1,16 @@
+
+.parent-one{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+.image{
+    background-color: rgb(32, 31, 31);
+    height: 400px;
+    width: 400px;
+}
+.image img{
+    height: 400px;
+    width: 400px;
+}
